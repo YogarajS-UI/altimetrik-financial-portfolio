@@ -1,0 +1,22 @@
+<mat-card appearance="outlined">
+    <mat-card-content>
+        <div class="asset-container">
+            <h5>Assets Allocation</h5>
+            <div class="chart-content">
+                <div class="assets-details">
+                
+                   @for(item of data(); track item.label){
+                    <p >{{item.label}} - {{item.value}}</p>
+                   }
+
+
+                </div>
+
+                <div class="chart-details">
+                    <app-pie-chart [data]="data()"></app-pie-chart>
+                </div>
+
+            </div>
+        </div>
+    </mat-card-content>
+</mat-card>

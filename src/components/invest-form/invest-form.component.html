@@ -1,0 +1,45 @@
+
+
+<div class="container-wrapper">
+<div class="form-container">
+    <h2>Asset Entry Form</h2>
+    <form  #f="ngForm" (ngSubmit)="onSubmit(f)">
+      <label for="assetType">Asset Type</label>
+      <select id="assetType" name="assetType" [(ngModel)]="assetValue"   (change)="onAssetSelect(assetValue)" required>
+        <option value="" disabled  selected>Select asset type</option>
+        @for(item of assetOptions; track item.type){
+        <option [value]="item.type">{{item.type}}</option>
+
+        }
+    
+      </select>
+
+
+      <label for="quantity">Quantity</label>
+      <input type="number" id="quantity" name="quantity" [(ngModel)]="quantity" min="1" required>
+
+      <label for="price">Price</label>
+      <input type="text" id="price" name="price"  [value]="price | currency:'USD'" placeholder="$0.00" disabled required>
+
+      <label for="price">Total</label>
+      <input type="text" id="total" name="total"  [value]="total | currency:'USD'" placeholder="$0.00" disabled required>
+
+      <label for="date">Date</label>
+      <input type="date" id="date" name="date" [(ngModel)]="date" required>
+
+      <button [class.disabled]="f.invalid" type="submit">Submit</button>
+    </form>
+  </div>
+
+</div>
+
+
+
+
+
+    
+  
+
+
+
+

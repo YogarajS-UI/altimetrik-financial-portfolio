@@ -1,0 +1,76 @@
+<mat-card appearance="outlined">
+    <mat-card-content>
+
+        <div class="trends-container">
+            <h5>Market Trends</h5>
+            <div class="trends-content">
+                <div>
+                    <table mat-table [dataSource]="dataSource()" class="mat-elevation-z8">
+
+
+                        <ng-container matColumnDef="rank">
+                            <th mat-header-cell *matHeaderCellDef> Rank </th>
+                            <td mat-cell *matCellDef="let element"> {{element.rank}} </td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="ticker">
+                            <th mat-header-cell *matHeaderCellDef> Ticker </th>
+                            <td mat-cell *matCellDef="let element"> {{element.ticker}} </td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="companyName">
+                            <th mat-header-cell *matHeaderCellDef> 	Company Name </th>
+                            <td mat-cell *matCellDef="let element"> {{element.companyName}} </td>
+                        </ng-container>
+
+                        <ng-container matColumnDef="sector">
+                            <th mat-header-cell *matHeaderCellDef> Sector </th>
+                            <td mat-cell *matCellDef="let element"> {{element.sector}} </td>
+                        </ng-container>
+
+
+                        
+                        <ng-container matColumnDef="price">
+                            <th mat-header-cell *matHeaderCellDef> Price (USD) </th>
+                            <td mat-cell *matCellDef="let element"> {{element.price}} </td>
+                        </ng-container>
+
+                        
+                        <ng-container matColumnDef="change24h">
+                            <th mat-header-cell *matHeaderCellDef> % Change (24h) </th>
+                            <td mat-cell *matCellDef="let element"> {{element.change24h}} </td>
+                        </ng-container>
+
+                           
+
+                            <ng-container matColumnDef="marketCap">
+                            <th mat-header-cell *matHeaderCellDef> 	Market Cap </th>
+                            <td mat-cell *matCellDef="let element"> {{element.marketCap}} </td>
+                        </ng-container>
+
+                              <ng-container matColumnDef="trendDirection">
+                            <th mat-header-cell *matHeaderCellDef> 	Trend Direction </th>
+                            <td mat-cell *matCellDef="let element"> {{element.trendDirection}} </td>
+                        </ng-container>
+
+                              <ng-container matColumnDef="analystSentiment">
+                            <th mat-header-cell *matHeaderCellDef> 	Analyst Sentiment </th>
+                            <td mat-cell *matCellDef="let element"> {{element.analystSentiment}} </td>
+                        </ng-container>
+
+                        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+                        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+                    </table>
+
+
+
+                </div>
+
+
+            </div>
+        </div>
+
+
+
+    </mat-card-content>
+</mat-card>

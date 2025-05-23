@@ -1,0 +1,27 @@
+@defer (when mockData){
+<div class="container">
+    <div>
+        <app-header></app-header>
+    </div>
+
+    <div class="asset-trends">
+        <div class="item">
+            <app-asset [data]="mockData.assetAllocation"></app-asset>
+        </div>
+        <div class="trend-item">
+            <app-market-trends [dataSource]="mockData.trendingStocks"></app-market-trends>
+
+        </div>
+
+    </div>
+
+    <div>
+        <app-performance-metrics [data]="mockData.performanceChart"></app-performance-metrics>
+
+    </div>
+
+</div>
+}@placeholder{
+    <h5>loading</h5>
+}
+

@@ -1,0 +1,87 @@
+{
+  "assetAllocation": [
+    { "label": "Equity", "value": 60 },
+    { "label": "Corporate bonds", "value": 20 },
+    { "label": "Commodities", "value": 10 },
+    { "label": "Foreign equities", "value": 5 },
+    { "label": "Others", "value": 5 }
+  ],
+
+  "trendingStocks": [
+    {
+      "rank": 1,
+      "ticker": "AAPL",
+      "companyName": "Apple Inc.",
+      "sector": "Technology",
+      "price": 185.32,
+      "change24h": "+2.34%",
+      "marketCap": "$2.9T",
+      "trendDirection": "📈 Uptrend",
+      "analystSentiment": "🟢 Buy"
+    },
+    {
+      "rank": 2,
+      "ticker": "NVDA",
+      "companyName": "NVIDIA Corp.",
+      "sector": "Semiconductors",
+      "price": 962.20,
+      "change24h": "+1.98%",
+      "marketCap": "$2.3T",
+      "trendDirection": "📈 Strong Uptrend",
+      "analystSentiment": "🟢 Strong Buy"
+    },
+    {
+      "rank": 3,
+      "ticker": "TSLA",
+      "companyName": "Tesla Inc.",
+      "sector": "Consumer Auto",
+      "price": 175.50,
+      "change24h": "-0.45%",
+      "marketCap": "$550B",
+      "trendDirection": "↔ Sideways",
+      "analystSentiment": "🟡 Hold"
+    },
+    {
+      "rank": 4,
+      "ticker": "MSFT",
+      "companyName": "Microsoft Corp.",
+      "sector": "Technology",
+      "price": 430.00,
+      "change24h": "+0.95%",
+      "marketCap": "$3.0T",
+      "trendDirection": "📈 Uptrend",
+      "analystSentiment": "🟢 Buy"
+    },
+    {
+      "rank": 5,
+      "ticker": "AMZN",
+      "companyName": "Amazon.com Inc.",
+      "sector": "Consumer Services",
+      "price": 192.50,
+      "change24h": "+1.15%",
+      "marketCap": "$1.9T",
+      "trendDirection": "📈 Uptrend",
+      "analystSentiment": "🟢 Buy"
+    }
+  ],
+
+  "performanceChart": [
+    { "date": "2023-01-01", "portfolio": 100000, "sp500": 100000, "nasdaq": 100000 },
+    { "date": "2023-02-01", "portfolio": 102500, "sp500": 101000, "nasdaq": 103000 },
+    { "date": "2023-03-01", "portfolio": 101200, "sp500": 102500, "nasdaq": 104500 },
+    { "date": "2023-04-01", "portfolio": 104000, "sp500": 103200, "nasdaq": 107000 },
+    { "date": "2023-05-01", "portfolio": 107000, "sp500": 104500, "nasdaq": 108000 },
+    { "date": "2023-06-01", "portfolio": 108300, "sp500": 106000, "nasdaq": 109200 },
+    { "date": "2023-07-01", "portfolio": 109000, "sp500": 107500, "nasdaq": 110000 },
+    { "date": "2023-08-01", "portfolio": 107800, "sp500": 106800, "nasdaq": 111500 },
+    { "date": "2023-09-01", "portfolio": 110500, "sp500": 108000, "nasdaq": 113000 },
+    { "date": "2023-10-01", "portfolio": 111200, "sp500": 109500, "nasdaq": 114000 }
+  ],
+
+  "formOptions": [
+    { "type": "stock", "price": 100 },
+    { "type": "bond", "price": 50 },
+    { "type": "real-estate", "price": 1000 },
+    { "type": "crypto", "price": 200 }
+  ]
+}

@@ -1,0 +1,23 @@
+.container{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 1rem;
+
+}
+
+.asset-trends{
+    display: flex;
+}
+
+.trend-item{
+    flex: 1;
+
+
+}
+
+@media (max-width:430px) {
+   .asset-trends{
+    flex-direction: column;
+}
+ 
+}
